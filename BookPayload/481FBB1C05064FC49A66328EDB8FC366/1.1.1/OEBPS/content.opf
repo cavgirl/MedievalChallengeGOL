@@ -6,7 +6,7 @@
 	<meta property="rendition:layout">pre-paginated</meta>	
 	<meta property="rendition:orientation">auto</meta>
 	<meta property="rendition:spread">none</meta>
-	<meta property="dcterms:modified">2021-02-07T23:18:45Z</meta>
+	<meta property="dcterms:modified">2021-02-08T18:25:22Z</meta>
 	<meta property="media:active-class">-epub-media-overlay-active</meta>
 	<meta property="media:duration">00:00:00</meta>
 	
@@ -14,7 +14,7 @@
 	<dc:creator>Lisa Townsend</dc:creator>
 	<dc:description>Powered by PubCoder</dc:description>
 	<dc:publisher>Lisa Townsend</dc:publisher>
-	<dc:date>2021-02-07</dc:date>
+	<dc:date>2021-02-08</dc:date>
 	<dc:rights>© 2021 Lisa Townsend</dc:rights>
 	<dc:language>en</dc:language>
 	<dc:identifier id="BookID">21284B68F09E4548AC37578FBED7284B</dc:identifier>
@@ -142,11 +142,11 @@
 <item id="obj936_image" href="assets/images/obj936_image.jpeg" media-type="image/jpeg" />
 <item id="obj915_image" href="assets/images/obj915_image.jpeg" media-type="image/jpeg" />
 <item id="obj894_image" href="assets/images/obj894_image.jpeg" media-type="image/jpeg" />
-<item id="obj873_image" href="assets/images/obj873_image.jpeg" media-type="image/jpeg" />
+<item id="obj873_image" href="assets/images/obj873_image.png" media-type="image/png" />
 <item id="obj832_image" href="assets/images/obj832_image.png" media-type="image/png" />
 <item id="obj827_image" href="assets/images/obj827_image.png" media-type="image/png" />
+<item id="obj1631_image" href="assets/images/obj1631_image.png" media-type="image/png" />
 <item id="obj1595_image" href="assets/images/obj1595_image.png" media-type="image/png" />
-<item id="obj1598_image" href="assets/images/obj1598_image.png" media-type="image/png" />
 <item id="thumbnail1" href="assets/1/thumbnail.jpg" media-type="image/jpeg" />
 <item id="loading1" href="assets/1/loading.jpg" media-type="image/jpeg" />
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <pubcoder>
 	<integratedUI>true</integratedUI>
-	<onTouchSystemUI>true</onTouchSystemUI>
+	<onTouchSystemUI>false</onTouchSystemUI>
 	<enableSwipe>false</enableSwipe>
 	<numPagesLandscape>1</numPagesLandscape>
 	<orientation>landscape</orientation>

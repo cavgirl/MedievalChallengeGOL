@@ -6,10 +6,10 @@ div.SCContent {
 div#obj330 {
 position: absolute;
 overflow: hidden;
-top: 70px;
-left: 69px;
-width: 62px;
-height: 61px;
+top: 65px;
+left: 49px;
+width: 88px;
+height: 79px;
 opacity: 1;
 z-index: 1;
 display:block;
@@ -19,10 +19,10 @@ pointer-events: none;
 div#obj1234 {
 position: absolute;
 overflow: hidden;
-top: 569px;
-left: 1137px;
-width: 214px;
-height: 183px;
+top: 555px;
+left: 1108px;
+width: 238px;
+height: 201px;
 opacity: 1;
 z-index: 2;
 display:block;
@@ -64,8 +64,8 @@ transform: rotate(45deg);
 div#obj1029 {
 position: absolute;
 overflow: hidden;
-top: 452px;
-left: 915px;
+top: 456px;
+left: 919px;
 width: 404px;
 height: 192px;
 opacity: 1;
@@ -1011,15 +1011,31 @@ display:none;
 pointer-events: none;
 
 }
+div#obj1626 {
+position: absolute;
+overflow: hidden;
+top: 57px;
+left: 902px;
+width: 311px;
+height: 299px;
+opacity: 1;
+z-index: 81;
+display:block;
+pointer-events: none;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+transform: rotate(45deg);
+
+}
 div#obj296 {
 position: absolute;
 overflow: hidden;
-top: 54px;
-left: 912px;
-width: 241px;
-height: 247px;
+top: 57px;
+left: 902px;
+width: 311px;
+height: 299px;
 opacity: 1;
-z-index: 81;
+z-index: 82;
 display:block;
 pointer-events: auto;
 -webkit-transform: rotate(45deg);
@@ -1035,7 +1051,7 @@ left: 810px;
 width: 486px;
 height: 140px;
 opacity: 1;
-z-index: 83;
+z-index: 84;
 display:none;
 pointer-events: auto;
 
@@ -1048,7 +1064,7 @@ left: 810px;
 width: 486px;
 height: 329px;
 opacity: 1;
-z-index: 84;
+z-index: 85;
 display:none;
 pointer-events: auto;
 
@@ -1061,7 +1077,7 @@ left: 35px;
 width: 100px;
 height: 100px;
 opacity: 1;
-z-index: 85;
+z-index: 86;
 display:none;
 pointer-events: none;
 
@@ -1074,7 +1090,7 @@ left: 194px;
 width: 100px;
 height: 100px;
 opacity: 1;
-z-index: 86;
+z-index: 87;
 display:none;
 pointer-events: none;
 
@@ -1087,7 +1103,7 @@ left: 16px;
 width: 494px;
 height: 192px;
 opacity: 1;
-z-index: 88;
+z-index: 89;
 display:none;
 pointer-events: auto;
 
@@ -1100,7 +1116,7 @@ left: 192px;
 width: 137px;
 height: 192px;
 opacity: 1;
-z-index: 89;
+z-index: 90;
 display:none;
 pointer-events: auto;
 
@@ -1113,7 +1129,7 @@ left: 35px;
 width: 100px;
 height: 100px;
 opacity: 1;
-z-index: 90;
+z-index: 91;
 display:none;
 pointer-events: none;
 
@@ -1126,7 +1142,7 @@ left: 194px;
 width: 100px;
 height: 100px;
 opacity: 1;
-z-index: 91;
+z-index: 92;
 display:none;
 pointer-events: none;
 
@@ -1139,7 +1155,7 @@ left: 20px;
 width: 532px;
 height: 192px;
 opacity: 1;
-z-index: 93;
+z-index: 94;
 display:none;
 pointer-events: auto;
 
@@ -1152,7 +1168,7 @@ left: 30px;
 width: 514px;
 height: 334px;
 opacity: 1;
-z-index: 94;
+z-index: 95;
 display:none;
 pointer-events: auto;
 
@@ -1165,7 +1181,7 @@ left: 35px;
 width: 100px;
 height: 100px;
 opacity: 1;
-z-index: 95;
+z-index: 96;
 display:none;
 pointer-events: none;
 
@@ -1178,7 +1194,7 @@ left: 194px;
 width: 100px;
 height: 100px;
 opacity: 1;
-z-index: 96;
+z-index: 97;
 display:none;
 pointer-events: none;
 
@@ -1191,7 +1207,7 @@ left: 633px;
 width: 665px;
 height: 231px;
 opacity: 1;
-z-index: 98;
+z-index: 99;
 display:none;
 pointer-events: auto;
 
@@ -1204,7 +1220,7 @@ left: 626px;
 width: 665px;
 height: 231px;
 opacity: 1;
-z-index: 99;
+z-index: 100;
 display:none;
 pointer-events: auto;
 
@@ -1217,7 +1233,7 @@ left: 35px;
 width: 100px;
 height: 100px;
 opacity: 1;
-z-index: 100;
+z-index: 101;
 display:none;
 pointer-events: none;
 
@@ -1230,7 +1246,7 @@ left: 194px;
 width: 100px;
 height: 100px;
 opacity: 1;
-z-index: 101;
+z-index: 102;
 display:none;
 pointer-events: none;
 
@@ -1243,7 +1259,7 @@ left: 34px;
 width: 436px;
 height: 435px;
 opacity: 1;
-z-index: 103;
+z-index: 104;
 display:none;
 pointer-events: auto;
 
@@ -1256,7 +1272,7 @@ left: 133px;
 width: 240px;
 height: 43px;
 opacity: 1;
-z-index: 104;
+z-index: 105;
 display:none;
 pointer-events: auto;
 
@@ -1269,7 +1285,7 @@ left: 378px;
 width: 46px;
 height: 255px;
 opacity: 1;
-z-index: 105;
+z-index: 106;
 display:none;
 pointer-events: auto;
 
@@ -1282,7 +1298,7 @@ left: 29px;
 width: 100px;
 height: 100px;
 opacity: 1;
-z-index: 108;
+z-index: 109;
 display:none;
 pointer-events: none;
 
@@ -1295,7 +1311,7 @@ left: 203px;
 width: 100px;
 height: 100px;
 opacity: 1;
-z-index: 109;
+z-index: 110;
 display:none;
 pointer-events: none;
 
@@ -1308,9 +1324,22 @@ left: 328px;
 width: 100px;
 height: 100px;
 opacity: 1;
-z-index: 110;
+z-index: 111;
 display:none;
 pointer-events: none;
+
+}
+div#obj1620 {
+position: absolute;
+overflow: hidden;
+top: -32px;
+left: 1202px;
+width: 256px;
+height: 151px;
+opacity: 1;
+z-index: 114;
+display:block;
+pointer-events: auto;
 
 }
 div#obj283 {
@@ -1541,7 +1570,7 @@ left: -6px;
 width: 1375px;
 height: 776px;
 opacity: 1;
-z-index: 82;
+z-index: 83;
 display:none;
 pointer-events: none;
 
@@ -1561,7 +1590,7 @@ left: -6px;
 width: 1375px;
 height: 776px;
 opacity: 1;
-z-index: 87;
+z-index: 88;
 display:none;
 pointer-events: none;
 
@@ -1581,7 +1610,7 @@ left: -5px;
 width: 1375px;
 height: 776px;
 opacity: 1;
-z-index: 92;
+z-index: 93;
 display:none;
 pointer-events: none;
 
@@ -1601,7 +1630,7 @@ left: -6px;
 width: 1375px;
 height: 776px;
 opacity: 1;
-z-index: 97;
+z-index: 98;
 display:none;
 pointer-events: none;
 
@@ -1621,7 +1650,7 @@ left: -6px;
 width: 1375px;
 height: 776px;
 opacity: 1;
-z-index: 102;
+z-index: 103;
 display:none;
 pointer-events: none;
 
@@ -1641,7 +1670,7 @@ left: 499px;
 width: 352px;
 height: 125px;
 opacity: 1;
-z-index: 111;
+z-index: 112;
 display:none;
 pointer-events: none;
 
@@ -1661,7 +1690,7 @@ left: 499px;
 width: 352px;
 height: 125px;
 opacity: 1;
-z-index: 112;
+z-index: 113;
 display:none;
 pointer-events: none;
 
@@ -1673,15 +1702,35 @@ img#obj827_img {
 	width: 352px;
 	height: 125px;
 }
+div#obj1631 {
+position: absolute;
+overflow: hidden;
+top: 559px;
+left: 1108px;
+width: 256px;
+height: 207px;
+opacity: 1;
+z-index: 115;
+display:block;
+pointer-events: auto;
+
+}
+img#obj1631_img {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 256px;
+	height: 207px;
+}
 div#obj1595 {
 position: absolute;
 overflow: hidden;
-top: -51px;
-left: 14px;
+top: -46px;
+left: -39px;
 width: 1338px;
 height: 848px;
 opacity: 1;
-z-index: 114;
+z-index: 117;
 display:block;
 pointer-events: auto;
 
@@ -1693,26 +1742,6 @@ img#obj1595_img {
 	width: 1338px;
 	height: 848px;
 }
-div#obj1598 {
-position: absolute;
-overflow: hidden;
-top: 14px;
-left: 1250px;
-width: 58px;
-height: 48px;
-opacity: 1;
-z-index: 115;
-display:block;
-pointer-events: auto;
-
-}
-img#obj1598_img {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 58px;
-	height: 48px;
-}
 
 div#obj860 {
 position: absolute;
@@ -1722,7 +1751,7 @@ left: 109px;
 width: 158px;
 height: 54px;
 opacity: 1;
-z-index: 106;
+z-index: 107;
 display:none;
 pointer-events: auto;
 user-select: none;  
@@ -1745,7 +1774,7 @@ left: 675px;
 width: 146px;
 height: 57px;
 opacity: 1;
-z-index: 107;
+z-index: 108;
 display:none;
 pointer-events: auto;
 user-select: none;  

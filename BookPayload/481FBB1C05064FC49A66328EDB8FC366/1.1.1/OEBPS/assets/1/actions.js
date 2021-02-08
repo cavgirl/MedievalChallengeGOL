@@ -19,9 +19,6 @@ var askAudioPermission = false;
  *
  * 
  */
-var obj1234_onTap_activeActionGroupIndex = -1;
-var obj1234_onTap_runningActionsCount = 0;
-var obj1234_onTap_loopCount = 0;
 var obj969_onTap_activeActionGroupIndex = -1;
 var obj969_onTap_runningActionsCount = 0;
 var obj969_onTap_loopCount = 0;
@@ -310,12 +307,15 @@ var obj832_onShow_loopCount = 0;
 var obj827_onShow_activeActionGroupIndex = -1;
 var obj827_onShow_runningActionsCount = 0;
 var obj827_onShow_loopCount = 0;
+var obj1620_onTap_activeActionGroupIndex = -1;
+var obj1620_onTap_runningActionsCount = 0;
+var obj1620_onTap_loopCount = 0;
+var obj1631_onTap_activeActionGroupIndex = -1;
+var obj1631_onTap_runningActionsCount = 0;
+var obj1631_onTap_loopCount = 0;
 var obj1595_onTap_activeActionGroupIndex = -1;
 var obj1595_onTap_runningActionsCount = 0;
 var obj1595_onTap_loopCount = 0;
-var obj1598_onTap_activeActionGroupIndex = -1;
-var obj1598_onTap_runningActionsCount = 0;
-var obj1598_onTap_loopCount = 0;
 /*
  * 
  * Init SCCounter
@@ -396,83 +396,6 @@ var obj852_counterCanExceedTargetValue = false;
 	 	 *
 	 	 */
 		
-obj1234_onTap_actionGroup0 = function(){
-	isLastActionGroup = false;
-	if (isLastActionGroup) {
-		window.obj1234_onTap_activeActionGroupIndex = -1;
-		$("#obj1234").trigger("obj1234_onTap_ended");
-		
-		return;
-	}
-	window.obj1234_onTap_activeActionGroupIndex = 0;
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//	action: Run JavaScript
-runjs_1616();
-function runjs_1616() {
-	window.obj1234_onTap_runningActionsCount = obj1234_onTap_runningActionsCount + 1;
-
-	
-	setTimeout(function() {
-		window.obj1234_onTap_runningActionsCount = window.obj1234_onTap_runningActionsCount - 1;
-if (window.obj1234_onTap_runningActionsCount == 0) {
-	obj1234_onTap_actionGroup1();
-}
-	}, 1);
-}
-
-
-
-
-
-
-};
-obj1234_onTap_actionGroup1 = function(){
-	isLastActionGroup = true;
-	if (isLastActionGroup) {
-		window.obj1234_onTap_activeActionGroupIndex = -1;
-		$("#obj1234").trigger("obj1234_onTap_ended");
-		
-		return;
-	}
-	window.obj1234_onTap_activeActionGroupIndex = 1;
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
 obj969_onTap_actionGroup0 = function(){
 	isLastActionGroup = false;
 	if (isLastActionGroup) {
@@ -5415,8 +5338,8 @@ function move_1588() {
 	}
 	var targetObject = $("#obj330");
 	var attr = targetObject.attr("data-SCPageObject-PreviousPosition");
-	var moveX = 69;
-	var moveY = 70;
+	var moveX = 49;
+	var moveY = 65;
 	var isMoveBack = false;
 	if (isMoveBack && typeof attr !== typeof undefined) {
 		moveX = attr.split(",")[0];
@@ -10664,6 +10587,48 @@ obj296_onTap_actionGroup0 = function(){
 	window.obj296_onTap_activeActionGroupIndex = 0;
 	
 
+//	action: hide
+//	target: obj296 
+hide_1629();
+function hide_1629() {
+	var element = "#obj296";
+	$(element).removeClass("animated bounce flash pulse rubberBand shake headShake swing tada wobble jello bounceIn bounceInDown bounceInLeft bounceInRight bounceInUp bounceOut bounceOutDown bounceOutLeft bounceOutRight bounceOutUp fadeIn fadeInDown fadeInDownBig fadeInLeft fadeInLeftBig fadeInRight fadeInRightBig fadeInUp fadeInUpBig fadeOut fadeOutDown fadeOutDownBig fadeOutLeft fadeOutLeftBig fadeOutRight fadeOutRightBig fadeOutUp fadeOutUpBig flipInX flipInY flipOutX flipOutY lightSpeedIn lightSpeedOut rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight hinge jackInTheBox rollIn rollOut zoomIn zoomInDown zoomInLeft zoomInRight zoomInUp zoomOut zoomOutDown zoomOutLeft zoomOutRight zoomOutUp slideInDown slideInLeft slideInRight slideInUp slideOutDown slideOutLeft slideOutRight slideOutUp heartBeat");
+	
+	window.obj296_onTap_runningActionsCount = obj296_onTap_runningActionsCount + 1;
+	
+	var animationType = "";
+	var animationDurationMs = 1000;
+	var animationIterationCount = "1";
+	if ($(element).css("display") == "none" || animationType == "" || animationDurationMs == 0) {
+		setTimeout(function() {
+			$(element).css("display", "none");
+			window.obj296_onTap_runningActionsCount = window.obj296_onTap_runningActionsCount - 1;
+if (window.obj296_onTap_runningActionsCount == 0) {
+	obj296_onTap_actionGroup1();
+}
+		}, 1);
+		return;
+	};
+	$(element).css("animation-duration", animationDurationMs + "ms");
+	$(element).css("animation-iteration-count", animationIterationCount);
+	// var node = $(element)[0];
+	if ($(element).attr("sccurrentanimation") != null) {
+		$(element).trigger("animationend", $(element).attr("sccurrentanimation"));
+		// node.classList.remove('animated', $(element).attr("sccurrentanimation"));
+		// $(element).attr("sccurrentanimation", null);
+		setTimeout(hide_1629(), 100);
+		return;
+	}
+	setTimeout(function() {
+		$(element).css("display", "none");
+		window.obj296_onTap_runningActionsCount = window.obj296_onTap_runningActionsCount - 1;
+if (window.obj296_onTap_runningActionsCount == 0) {
+	obj296_onTap_actionGroup1();
+}
+	}, animationDurationMs);
+	$(element).addClass("animated " + animationType);
+	// node.classList.add('animated', animationType)
+}
 
 //	action: move
 //	target: obj330 
@@ -14279,6 +14244,48 @@ obj866_onTap_actionGroup0 = function(){
 	window.obj866_onTap_activeActionGroupIndex = 0;
 	
 
+//	action: hide
+//	target: obj866 
+hide_1625();
+function hide_1625() {
+	var element = "#obj866";
+	$(element).removeClass("animated bounce flash pulse rubberBand shake headShake swing tada wobble jello bounceIn bounceInDown bounceInLeft bounceInRight bounceInUp bounceOut bounceOutDown bounceOutLeft bounceOutRight bounceOutUp fadeIn fadeInDown fadeInDownBig fadeInLeft fadeInLeftBig fadeInRight fadeInRightBig fadeInUp fadeInUpBig fadeOut fadeOutDown fadeOutDownBig fadeOutLeft fadeOutLeftBig fadeOutRight fadeOutRightBig fadeOutUp fadeOutUpBig flipInX flipInY flipOutX flipOutY lightSpeedIn lightSpeedOut rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight hinge jackInTheBox rollIn rollOut zoomIn zoomInDown zoomInLeft zoomInRight zoomInUp zoomOut zoomOutDown zoomOutLeft zoomOutRight zoomOutUp slideInDown slideInLeft slideInRight slideInUp slideOutDown slideOutLeft slideOutRight slideOutUp heartBeat");
+	
+	window.obj866_onTap_runningActionsCount = obj866_onTap_runningActionsCount + 1;
+	
+	var animationType = "";
+	var animationDurationMs = 1000;
+	var animationIterationCount = "1";
+	if ($(element).css("display") == "none" || animationType == "" || animationDurationMs == 0) {
+		setTimeout(function() {
+			$(element).css("display", "none");
+			window.obj866_onTap_runningActionsCount = window.obj866_onTap_runningActionsCount - 1;
+if (window.obj866_onTap_runningActionsCount == 0) {
+	obj866_onTap_actionGroup1();
+}
+		}, 1);
+		return;
+	};
+	$(element).css("animation-duration", animationDurationMs + "ms");
+	$(element).css("animation-iteration-count", animationIterationCount);
+	// var node = $(element)[0];
+	if ($(element).attr("sccurrentanimation") != null) {
+		$(element).trigger("animationend", $(element).attr("sccurrentanimation"));
+		// node.classList.remove('animated', $(element).attr("sccurrentanimation"));
+		// $(element).attr("sccurrentanimation", null);
+		setTimeout(hide_1625(), 100);
+		return;
+	}
+	setTimeout(function() {
+		$(element).css("display", "none");
+		window.obj866_onTap_runningActionsCount = window.obj866_onTap_runningActionsCount - 1;
+if (window.obj866_onTap_runningActionsCount == 0) {
+	obj866_onTap_actionGroup1();
+}
+	}, animationDurationMs);
+	$(element).addClass("animated " + animationType);
+	// node.classList.add('animated', animationType)
+}
 //	action: show 
 //	target: obj858 
 show_868();
@@ -14412,6 +14419,48 @@ obj862_onTap_actionGroup0 = function(){
 	window.obj862_onTap_activeActionGroupIndex = 0;
 	
 
+//	action: hide
+//	target: obj862 
+hide_1624();
+function hide_1624() {
+	var element = "#obj862";
+	$(element).removeClass("animated bounce flash pulse rubberBand shake headShake swing tada wobble jello bounceIn bounceInDown bounceInLeft bounceInRight bounceInUp bounceOut bounceOutDown bounceOutLeft bounceOutRight bounceOutUp fadeIn fadeInDown fadeInDownBig fadeInLeft fadeInLeftBig fadeInRight fadeInRightBig fadeInUp fadeInUpBig fadeOut fadeOutDown fadeOutDownBig fadeOutLeft fadeOutLeftBig fadeOutRight fadeOutRightBig fadeOutUp fadeOutUpBig flipInX flipInY flipOutX flipOutY lightSpeedIn lightSpeedOut rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight hinge jackInTheBox rollIn rollOut zoomIn zoomInDown zoomInLeft zoomInRight zoomInUp zoomOut zoomOutDown zoomOutLeft zoomOutRight zoomOutUp slideInDown slideInLeft slideInRight slideInUp slideOutDown slideOutLeft slideOutRight slideOutUp heartBeat");
+	
+	window.obj862_onTap_runningActionsCount = obj862_onTap_runningActionsCount + 1;
+	
+	var animationType = "";
+	var animationDurationMs = 1000;
+	var animationIterationCount = "1";
+	if ($(element).css("display") == "none" || animationType == "" || animationDurationMs == 0) {
+		setTimeout(function() {
+			$(element).css("display", "none");
+			window.obj862_onTap_runningActionsCount = window.obj862_onTap_runningActionsCount - 1;
+if (window.obj862_onTap_runningActionsCount == 0) {
+	obj862_onTap_actionGroup1();
+}
+		}, 1);
+		return;
+	};
+	$(element).css("animation-duration", animationDurationMs + "ms");
+	$(element).css("animation-iteration-count", animationIterationCount);
+	// var node = $(element)[0];
+	if ($(element).attr("sccurrentanimation") != null) {
+		$(element).trigger("animationend", $(element).attr("sccurrentanimation"));
+		// node.classList.remove('animated', $(element).attr("sccurrentanimation"));
+		// $(element).attr("sccurrentanimation", null);
+		setTimeout(hide_1624(), 100);
+		return;
+	}
+	setTimeout(function() {
+		$(element).css("display", "none");
+		window.obj862_onTap_runningActionsCount = window.obj862_onTap_runningActionsCount - 1;
+if (window.obj862_onTap_runningActionsCount == 0) {
+	obj862_onTap_actionGroup1();
+}
+	}, animationDurationMs);
+	$(element).addClass("animated " + animationType);
+	// node.classList.add('animated', animationType)
+}
 //	action: show 
 //	target: obj860 
 show_864();
@@ -15790,6 +15839,223 @@ obj827_onShow_actionGroup2 = function(){
 
 
 };
+obj1620_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj1620_onTap_activeActionGroupIndex = -1;
+		$("#obj1620").trigger("obj1620_onTap_ended");
+		
+		return;
+	}
+	window.obj1620_onTap_activeActionGroupIndex = 0;
+	
+
+//	action: show 
+//	target: obj1595 
+show_1622();
+function show_1622() {
+	var element = "#obj1595";
+	$(element).removeClass("animated bounce flash pulse rubberBand shake headShake swing tada wobble jello bounceIn bounceInDown bounceInLeft bounceInRight bounceInUp bounceOut bounceOutDown bounceOutLeft bounceOutRight bounceOutUp fadeIn fadeInDown fadeInDownBig fadeInLeft fadeInLeftBig fadeInRight fadeInRightBig fadeInUp fadeInUpBig fadeOut fadeOutDown fadeOutDownBig fadeOutLeft fadeOutLeftBig fadeOutRight fadeOutRightBig fadeOutUp fadeOutUpBig flipInX flipInY flipOutX flipOutY lightSpeedIn lightSpeedOut rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight hinge jackInTheBox rollIn rollOut zoomIn zoomInDown zoomInLeft zoomInRight zoomInUp zoomOut zoomOutDown zoomOutLeft zoomOutRight zoomOutUp slideInDown slideInLeft slideInRight slideInUp slideOutDown slideOutLeft slideOutRight slideOutUp heartBeat");
+	window.obj1620_onTap_runningActionsCount = obj1620_onTap_runningActionsCount + 1;
+
+	var animationType = "zoomIn";
+	var animationDurationMs = 1000;
+	var animationIterationCount = "1";
+	if ($(element).css("display") == "block" || animationType == "" || animationDurationMs == 0) {
+		setTimeout(function() {
+			$(element).css("display", "block");
+			window.obj1620_onTap_runningActionsCount = window.obj1620_onTap_runningActionsCount - 1;
+if (window.obj1620_onTap_runningActionsCount == 0) {
+	obj1620_onTap_actionGroup1();
+}
+			$(element).trigger('SCEventShow');
+		}, 1);
+		return;
+	};
+	$(element).css("animation-duration", animationDurationMs + "ms");
+	$(element).css("animation-iteration-count", animationIterationCount);
+	// var node = $(element)[0];
+	setTimeout(function() {
+		$(element).css("display", "block");
+		window.obj1620_onTap_runningActionsCount = window.obj1620_onTap_runningActionsCount - 1;
+if (window.obj1620_onTap_runningActionsCount == 0) {
+	obj1620_onTap_actionGroup1();
+}
+		$(element).trigger('SCEventShow');
+	}, animationDurationMs);
+	// node.classList.add('animated', animationType);
+	$(element).addClass("animated " + animationType);
+	$(element).css("display", "block");
+
+	// $(element).fadeIn(1000, function() {
+	// 		setTimeout(function() {
+	// 			window.obj1620_onTap_runningActionsCount = window.obj1620_onTap_runningActionsCount - 1;
+if (window.obj1620_onTap_runningActionsCount == 0) {
+	obj1620_onTap_actionGroup1();
+}
+	// 			$(element).trigger('SCEventShow');
+	// 		}, 1);
+	// 	}
+	// );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj1620_onTap_actionGroup1 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj1620_onTap_activeActionGroupIndex = -1;
+		$("#obj1620").trigger("obj1620_onTap_ended");
+		
+		return;
+	}
+	window.obj1620_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj1631_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj1631_onTap_activeActionGroupIndex = -1;
+		$("#obj1631").trigger("obj1631_onTap_ended");
+		
+		return;
+	}
+	window.obj1631_onTap_activeActionGroupIndex = 0;
+	
+
+//	action: hide
+//	target: obj1631 
+hide_1634();
+function hide_1634() {
+	var element = "#obj1631";
+	$(element).removeClass("animated bounce flash pulse rubberBand shake headShake swing tada wobble jello bounceIn bounceInDown bounceInLeft bounceInRight bounceInUp bounceOut bounceOutDown bounceOutLeft bounceOutRight bounceOutUp fadeIn fadeInDown fadeInDownBig fadeInLeft fadeInLeftBig fadeInRight fadeInRightBig fadeInUp fadeInUpBig fadeOut fadeOutDown fadeOutDownBig fadeOutLeft fadeOutLeftBig fadeOutRight fadeOutRightBig fadeOutUp fadeOutUpBig flipInX flipInY flipOutX flipOutY lightSpeedIn lightSpeedOut rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight hinge jackInTheBox rollIn rollOut zoomIn zoomInDown zoomInLeft zoomInRight zoomInUp zoomOut zoomOutDown zoomOutLeft zoomOutRight zoomOutUp slideInDown slideInLeft slideInRight slideInUp slideOutDown slideOutLeft slideOutRight slideOutUp heartBeat");
+	
+	window.obj1631_onTap_runningActionsCount = obj1631_onTap_runningActionsCount + 1;
+	
+	var animationType = "zoomOut";
+	var animationDurationMs = 1000;
+	var animationIterationCount = "1";
+	if ($(element).css("display") == "none" || animationType == "" || animationDurationMs == 0) {
+		setTimeout(function() {
+			$(element).css("display", "none");
+			window.obj1631_onTap_runningActionsCount = window.obj1631_onTap_runningActionsCount - 1;
+if (window.obj1631_onTap_runningActionsCount == 0) {
+	obj1631_onTap_actionGroup1();
+}
+		}, 1);
+		return;
+	};
+	$(element).css("animation-duration", animationDurationMs + "ms");
+	$(element).css("animation-iteration-count", animationIterationCount);
+	// var node = $(element)[0];
+	if ($(element).attr("sccurrentanimation") != null) {
+		$(element).trigger("animationend", $(element).attr("sccurrentanimation"));
+		// node.classList.remove('animated', $(element).attr("sccurrentanimation"));
+		// $(element).attr("sccurrentanimation", null);
+		setTimeout(hide_1634(), 100);
+		return;
+	}
+	setTimeout(function() {
+		$(element).css("display", "none");
+		window.obj1631_onTap_runningActionsCount = window.obj1631_onTap_runningActionsCount - 1;
+if (window.obj1631_onTap_runningActionsCount == 0) {
+	obj1631_onTap_actionGroup1();
+}
+	}, animationDurationMs);
+	$(element).addClass("animated " + animationType);
+	// node.classList.add('animated', animationType)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj1631_onTap_actionGroup1 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj1631_onTap_activeActionGroupIndex = -1;
+		$("#obj1631").trigger("obj1631_onTap_ended");
+		
+		return;
+	}
+	window.obj1631_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
 obj1595_onTap_actionGroup0 = function(){
 	isLastActionGroup = false;
 	if (isLastActionGroup) {
@@ -15810,7 +16076,7 @@ function hide_1600() {
 	
 	window.obj1595_onTap_runningActionsCount = obj1595_onTap_runningActionsCount + 1;
 	
-	var animationType = "";
+	var animationType = "zoomOut";
 	var animationDurationMs = 1000;
 	var animationIterationCount = "1";
 	if ($(element).css("display") == "none" || animationType == "" || animationDurationMs == 0) {
@@ -15896,117 +16162,6 @@ obj1595_onTap_actionGroup1 = function(){
 
 
 };
-obj1598_onTap_actionGroup0 = function(){
-	isLastActionGroup = false;
-	if (isLastActionGroup) {
-		window.obj1598_onTap_activeActionGroupIndex = -1;
-		$("#obj1598").trigger("obj1598_onTap_ended");
-		
-		return;
-	}
-	window.obj1598_onTap_activeActionGroupIndex = 0;
-	
-
-//	action: show 
-//	target: obj1595 
-show_1604();
-function show_1604() {
-	var element = "#obj1595";
-	$(element).removeClass("animated bounce flash pulse rubberBand shake headShake swing tada wobble jello bounceIn bounceInDown bounceInLeft bounceInRight bounceInUp bounceOut bounceOutDown bounceOutLeft bounceOutRight bounceOutUp fadeIn fadeInDown fadeInDownBig fadeInLeft fadeInLeftBig fadeInRight fadeInRightBig fadeInUp fadeInUpBig fadeOut fadeOutDown fadeOutDownBig fadeOutLeft fadeOutLeftBig fadeOutRight fadeOutRightBig fadeOutUp fadeOutUpBig flipInX flipInY flipOutX flipOutY lightSpeedIn lightSpeedOut rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight hinge jackInTheBox rollIn rollOut zoomIn zoomInDown zoomInLeft zoomInRight zoomInUp zoomOut zoomOutDown zoomOutLeft zoomOutRight zoomOutUp slideInDown slideInLeft slideInRight slideInUp slideOutDown slideOutLeft slideOutRight slideOutUp heartBeat");
-	window.obj1598_onTap_runningActionsCount = obj1598_onTap_runningActionsCount + 1;
-
-	var animationType = "";
-	var animationDurationMs = 1000;
-	var animationIterationCount = "1";
-	if ($(element).css("display") == "block" || animationType == "" || animationDurationMs == 0) {
-		setTimeout(function() {
-			$(element).css("display", "block");
-			window.obj1598_onTap_runningActionsCount = window.obj1598_onTap_runningActionsCount - 1;
-if (window.obj1598_onTap_runningActionsCount == 0) {
-	obj1598_onTap_actionGroup1();
-}
-			$(element).trigger('SCEventShow');
-		}, 1);
-		return;
-	};
-	$(element).css("animation-duration", animationDurationMs + "ms");
-	$(element).css("animation-iteration-count", animationIterationCount);
-	// var node = $(element)[0];
-	setTimeout(function() {
-		$(element).css("display", "block");
-		window.obj1598_onTap_runningActionsCount = window.obj1598_onTap_runningActionsCount - 1;
-if (window.obj1598_onTap_runningActionsCount == 0) {
-	obj1598_onTap_actionGroup1();
-}
-		$(element).trigger('SCEventShow');
-	}, animationDurationMs);
-	// node.classList.add('animated', animationType);
-	$(element).addClass("animated " + animationType);
-	$(element).css("display", "block");
-
-	// $(element).fadeIn(1000, function() {
-	// 		setTimeout(function() {
-	// 			window.obj1598_onTap_runningActionsCount = window.obj1598_onTap_runningActionsCount - 1;
-if (window.obj1598_onTap_runningActionsCount == 0) {
-	obj1598_onTap_actionGroup1();
-}
-	// 			$(element).trigger('SCEventShow');
-	// 		}, 1);
-	// 	}
-	// );
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-obj1598_onTap_actionGroup1 = function(){
-	isLastActionGroup = true;
-	if (isLastActionGroup) {
-		window.obj1598_onTap_activeActionGroupIndex = -1;
-		$("#obj1598").trigger("obj1598_onTap_ended");
-		
-		return;
-	}
-	window.obj1598_onTap_activeActionGroupIndex = 1;
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
 		
 		/*
 		 *
@@ -16031,19 +16186,6 @@ obj1598_onTap_actionGroup1 = function(){
 
 
 
-/*
- *
- *   obj1234: Event Touch Down
- *
- */
- 
-$("#obj1234").bind(PubCoder.Events.Tap, function(event) {
-	event.preventDefault();	
-	if (window.obj1234_onTap_activeActionGroupIndex != -1) return;
-var obj1234_onTap_runningActionsCount = 0;
-var obj1234_onTap_loopCount = 0;
-obj1234_onTap_actionGroup0();
-});
 
 
 
@@ -17488,6 +17630,13 @@ obj1138_SCEventRun_actionGroup0();
 
 
 
+
+
+
+
+
+
+
 /*
  *
  *   obj296: Event Touch Down
@@ -18010,16 +18159,16 @@ obj827_onShow_actionGroup0();
 
 /*
  *
- *   obj1595: Event Touch Down
+ *   obj1620: Event Touch Down
  *
  */
  
-$("#obj1595").bind(PubCoder.Events.Tap, function(event) {
+$("#obj1620").bind(PubCoder.Events.Tap, function(event) {
 	event.preventDefault();	
-	if (window.obj1595_onTap_activeActionGroupIndex != -1) return;
-var obj1595_onTap_runningActionsCount = 0;
-var obj1595_onTap_loopCount = 0;
-obj1595_onTap_actionGroup0();
+	if (window.obj1620_onTap_activeActionGroupIndex != -1) return;
+var obj1620_onTap_runningActionsCount = 0;
+var obj1620_onTap_loopCount = 0;
+obj1620_onTap_actionGroup0();
 });
 
 
@@ -18030,16 +18179,36 @@ obj1595_onTap_actionGroup0();
 
 /*
  *
- *   obj1598: Event Touch Down
+ *   obj1631: Event Touch Down
  *
  */
  
-$("#obj1598").bind(PubCoder.Events.Tap, function(event) {
+$("#obj1631").bind(PubCoder.Events.Tap, function(event) {
 	event.preventDefault();	
-	if (window.obj1598_onTap_activeActionGroupIndex != -1) return;
-var obj1598_onTap_runningActionsCount = 0;
-var obj1598_onTap_loopCount = 0;
-obj1598_onTap_actionGroup0();
+	if (window.obj1631_onTap_activeActionGroupIndex != -1) return;
+var obj1631_onTap_runningActionsCount = 0;
+var obj1631_onTap_loopCount = 0;
+obj1631_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+/*
+ *
+ *   obj1595: Event Touch Down
+ *
+ */
+ 
+$("#obj1595").bind(PubCoder.Events.Tap, function(event) {
+	event.preventDefault();	
+	if (window.obj1595_onTap_activeActionGroupIndex != -1) return;
+var obj1595_onTap_runningActionsCount = 0;
+var obj1595_onTap_loopCount = 0;
+obj1595_onTap_actionGroup0();
 });
 
 
@@ -18114,9 +18283,11 @@ $("#obj821").trigger('SCEventShow');
 $("#obj444").trigger('SCEventShow');
 $("#obj1015").trigger('SCEventShow');
 $("#obj448").trigger('SCEventShow');
+$("#obj1626").trigger('SCEventShow');
 $("#obj296").trigger('SCEventShow');
+$("#obj1620").trigger('SCEventShow');
+$("#obj1631").trigger('SCEventShow');
 $("#obj1595").trigger('SCEventShow');
-$("#obj1598").trigger('SCEventShow');
 	$(window).trigger(PubCoder.Events.PageReady);
 	
 });
