@@ -14,6 +14,8 @@ var PubCoder = {
 		//
 "page1665": "../1/page.xhtml", 
 "page282": "../2/page.xhtml", 
+"page1728": "../3/page.xhtml", 
+"page1729": "../4/page.xhtml", 
 	},
 	
 	Events: {

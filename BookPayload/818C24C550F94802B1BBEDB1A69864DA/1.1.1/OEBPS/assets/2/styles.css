@@ -1326,32 +1326,6 @@ display:block;
 pointer-events: auto;
 
 }
-div#obj1657 {
-position: absolute;
-overflow: hidden;
-top: 335px;
-left: 808px;
-width: 517px;
-height: 417px;
-opacity: 1;
-z-index: 115;
-display:none;
-pointer-events: auto;
-
-}
-div#obj1653 {
-position: absolute;
-overflow: hidden;
-top: 775px;
-left: 9px;
-width: 100px;
-height: 100px;
-opacity: 1;
-z-index: 116;
-display:none;
-pointer-events: none;
-
-}
 div#obj283 {
 position: absolute;
 overflow: hidden;
@@ -1712,26 +1686,6 @@ img#obj827_img {
 	width: 352px;
 	height: 125px;
 }
-div#obj1661 {
-position: absolute;
-overflow: hidden;
-top: -5px;
-left: -5px;
-width: 1377px;
-height: 778px;
-opacity: 1;
-z-index: 114;
-display:none;
-pointer-events: none;
-
-}
-img#obj1661_img {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1377px;
-	height: 778px;
-}
 div#obj1673 {
 position: absolute;
 overflow: hidden;
@@ -1740,7 +1694,7 @@ left: 1108px;
 width: 256px;
 height: 207px;
 opacity: 1;
-z-index: 118;
+z-index: 115;
 display:block;
 pointer-events: none;
 
@@ -1760,7 +1714,7 @@ left: -39px;
 width: 1338px;
 height: 848px;
 opacity: 1;
-z-index: 119;
+z-index: 116;
 display:block;
 pointer-events: auto;
 
